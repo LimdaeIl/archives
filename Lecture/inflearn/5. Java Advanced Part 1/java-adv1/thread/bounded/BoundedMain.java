@@ -20,9 +20,8 @@ public class BoundedMain {
     BoundedQueue queue = new BoundedQueueV6_4(2);
 
     // 2. 생산자, 소비자 실행 순서 선택, 반드시 하나만 선택!
-    producerFirst(queue);
-//    consumerFirst(queue);
-
+//    producerFirst(queue);
+    consumerFirst(queue);
   }
 
   private static void producerFirst(BoundedQueue queue) {

@@ -28,8 +28,8 @@ public class BoundedQueueV3 implements BoundedQueue {
     }
     queue.offer(data);
     log("[put] 생산자 데이터 저장, notify() 호출");
-    notify(); // 대기 스레드, WAIT -> BLOCKED
-    // notifyAll(); // 모든 대기 스레드, WAIT -> BLOCKED
+//    notify(); // 대기 스레드, WAIT -> BLOCKED
+     notifyAll(); // 모든 대기 스레드, WAIT -> BLOCKED
   }
 
   @Override
@@ -45,8 +45,8 @@ public class BoundedQueueV3 implements BoundedQueue {
     }
     String data = queue.poll();
     log("[take] 소비자 데이터 획득, notify() 호출");
-    notify(); // 대기 스레드, WAIT -> BLOCKED
-    // notifyAll(); // 모든 대기 스레드, WAIT -> BLOCKED
+//    notify(); // 대기 스레드, WAIT -> BLOCKED
+     notifyAll(); // 모든 대기 스레드, WAIT -> BLOCKED
     return data;
   }
 
