@@ -6,13 +6,13 @@ import static util.ThreadUtils.sleep;
 
 public class BasicList implements SimpleList {
 
-    private static final int DEFAULT_CAPATICY = 5;
+    private static final int DEFAULT_CAPACITY= 5;
 
     private Object[] elementData;
     private int size = 0;
 
     public BasicList() {
-        elementData = new Object[DEFAULT_CAPATICY];
+        elementData = new Object[DEFAULT_CAPACITY];
     }
 
     @Override
