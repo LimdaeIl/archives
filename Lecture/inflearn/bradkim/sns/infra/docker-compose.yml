@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: oauthdb
+      MYSQL_USER: oauthuser
+      MYSQL_PASSWORD: oauthpass
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - sns-network
+
+volumes:
+  mysql-data:
+
+networks:
+  sns-network:
+    driver: bridge
