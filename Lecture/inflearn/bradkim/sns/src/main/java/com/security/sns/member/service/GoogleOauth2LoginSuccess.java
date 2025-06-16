@@ -60,7 +60,6 @@ public class GoogleOauth2LoginSuccess extends SimpleUrlAuthenticationSuccessHand
     response.sendRedirect("http://localhost:3000");
 
   }
-
 }
 
 
