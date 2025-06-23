@@ -5,7 +5,7 @@ export default function TabBar({$app, initialState, onClick}) {
 
     $app.appendChild(this.$target);
     this.onClick = onClick;
-
+     
     this.template = () => {
         let temp = `<div id = "all">전체</div><div id = "penguin">펭귄</div><div id = "koala">코알라</div><div id = "panda">판다</div>`;
         return temp;
