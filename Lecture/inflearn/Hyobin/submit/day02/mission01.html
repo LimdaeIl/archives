@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>미션1. switch case 문 작성하기</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <script src="mission01.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f6f8fa;
+            margin: 0;
+            padding: 150px;
+        }
+
+        #input-area {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #result {
+            margin-top: 30px;
+            font-size: 1.3em;
+            color: #0077cc;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            font-size: 1.2em;
+            padding: 10px;
+            width: 200px;
+            border-radius: 5px;
+            border-color: #0077cc;
+        }
+
+        button {
+            background-color: #f0f8ff;
+            font-size: 1em;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 7px;
+            border-color: #FFFFFF;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            color: #333;
+        }
+        .markdown-box {
+            background-color: #ffffff;
+            border: 1px solid #d0d7de;
+            border-radius: 6px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .markdown-box code {
+            background-color: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #cf222e;
+        }
+        pre {
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="markdown-box">
+    <h2>미션1. switch case문 작성하기</h2>
+    <p><code>switch/case</code> 문을 사용해서 조건문을 작성하세요.</p>
+    <p>생성한 <code>animal</code> 변수에 할당된 값이 <code>cat</code> 일 경우에 '고양이'가 출력될 수 있도록 조건문을 알맞게 작성해주세요.</p>
+    <p><code>case</code> 문은 dog, tiger, cat, lion으로 나눠서 작성하고, <code>case</code> 문의 내부에는 각각의 동물을 출력하는 코드를 작성해주세요.</p>
+
+    <p>예시:</p>
+    <pre><code>case 'tiger':
+    console.log('호랑이');
+    break;</code></pre>
+</div>
+
+<div id="input-area">
+    <label for="animalInput"></label>
+    <input type="text" id="animalInput" placeholder="dog, cat, tiger, lion">
+    <button onclick="checkAnimal()">결과 확인</button>
+</div>
+
+<div id="result"></div>
+</body>
+</html>
