@@ -1,17 +1,31 @@
 <!doctype html>
 <html lang="ko">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Circle 객체</title>
-	<style>
-		body { text-align: center; font-size:1.2em; line-height: 2em;}
-	</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle 객체</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 2em;
+        }
+    </style>
 </head>
 <body>
-	<script>
-		var r = prompt("원의 반지름은? (cm)");
-	
-	</script>
+<script>
+    var r = prompt("원의 반지름은? (cm)");
+    var circumference = 2 * Math.PI * r;
+    var area = Math.PI * Math.pow(r, 2);
+
+    document.write(
+        `
+        반지름이 약 ${r}cm일 때 <br>
+        원의 둘레: 약 ${Math.round(circumference)}cm <br>
+        원의 넓이: 약 ${Math.floor(area)}cm)
+		`
+    );
+
+</script>
 </body>
 </html>
