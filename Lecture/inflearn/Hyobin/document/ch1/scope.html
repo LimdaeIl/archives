@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7. Scope</title>
+</head>
+<body>
+<script>
+    const printResult = (a, b) => {
+        let result = a + b;
+        console.log("결과:", result);
+    };
+
+    const doubleResult = (a, b) => {
+        let result = a + b;
+        console.log("결과에 2를 곱한 값:", result * 2);
+    };
+
+    printResult(5, 3);
+    doubleResult(5, 3);
+</script>
+</body>
+</html>
