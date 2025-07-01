@@ -1,38 +1,9 @@
-const changePage = (page) => {
-    let $content = document.getElementById('content');
-    $content.textContent = `현재 보고 있는 페이지는 ${page}입니다.`;
-    history.pushState({page: page}, `Title: ${page}`, `/${page}`);
-};
+const $username = document.querySelector("#userName");
+const $password = document.querySelector("#password");
 
-// popstate
-window.addEventListener('popstate', (event) => {
-    if (event.state) {
-        let $content = document.getElementById('content');
-        $content.textContent = `현재 보고 있는 페이지는 ${event.state}입니다.`;
-    }
-})
+const $loginBtn = document.querySelector("button");
 
-document.getElementById('page1').addEventListener('click', () => {
-    changePage('page1')
+$loginBtn.addEventListener("click", () => {
+   console.log(`username : ${$username.value}`);
+   console.log(`password: ${$password.value}`);
 });
-document.getElementById('page2').addEventListener('click', () => {
-    changePage('page2')
-});
-document.getElementById('page3').addEventListener('click', () => {
-    changePage('page3')
-});
-
-const goBack = () => {
-    history.back();
-};
-
-const goForward = () => {
-    history.forward();
-};
-
-document.getElementById('goBack').addEventListener('click', () => {
-    goBack();
-})
-document.getElementById('goBack').addEventListener('click', () => {
-    goForward();
-})
