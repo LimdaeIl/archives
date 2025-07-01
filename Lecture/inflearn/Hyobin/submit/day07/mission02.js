@@ -24,3 +24,7 @@ htmlSelectElement.appendChild(htmlOptionElement2);
 htmlSelectElement.appendChild(htmlOptionElement3);
 htmlSelectElement.appendChild(htmlOptionElement4);
 $app.appendChild(htmlSelectElement);
+
+$app.addEventListener("change", (e) => {
+    console.log(e.target.value);
+})
