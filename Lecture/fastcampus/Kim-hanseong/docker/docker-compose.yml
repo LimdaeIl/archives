@@ -10,12 +10,8 @@ services:
     ports:
       - "3307:3306"
     volumes:
-      - mysql_db_data:/var/lib/mysql
-    networks:
-      - invest-network
+      - db_data:/var/lib/mysql
 
 volumes:
-  mysql_db_data:
+  db_data:
 
-networks:
-  invest-network:
