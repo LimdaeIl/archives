@@ -5,9 +5,6 @@ export const setPokemonType = (types) => {
             case 'grass':
                 temp += `<div class="type-tag" id="${elm}" style="background-color: var(--${elm})">풀</div>`;
                 break;
-            case 'poision':
-                temp += `<div class="type-tag" id="${elm}" style="background-color: var(--${elm})">독</div>`;
-                break;
             case 'fire':
                 temp += `<div class="type-tag" id="${elm}" style="background-color: var(--${elm})">불</div>`;
                 break;
